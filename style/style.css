@@ -18,12 +18,13 @@
 .website-Wrapper {
   position: relative;
 }
+
 /* navbar setup */
 .navbar {
   z-index: 100;
   opacity: 0.95;
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   position: fixed;
   display: flex;
   align-items: center;
@@ -50,13 +51,13 @@
 }
 .navbar > ul > li > a {
   font-family: "SF Pro Text Regular";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #ffffff;
   text-decoration: none;
 }
 
 .navbar-placeholder {
-  height: 3rem;
+  height: 2.5rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -67,7 +68,7 @@
 /* holidays */
 .holiday-banner {
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   background-color: #e3403f;
   display: flex;
   justify-content: center;
@@ -77,11 +78,12 @@
 .holiday-banner > p {
   opacity: 0.8;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .holiday-banner > p > a {
+  z-index: 50;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-decoration: none;
 }
 .holiday-banner > p > a:hover {
@@ -100,11 +102,16 @@
 
 .holiday-container > img {
   margin-top: 2rem;
-  max-width: 80%;
+  height: 12vh;
+  width: 5vw;
+}
+.resize {
+  height: 16rem;
+  width: 16rem;
 }
 .holiday-container > header {
   margin-top: 1rem;
-  font-size: 3.4rem;
+  font-size: 3.3rem;
   font-weight: bold;
 }
 .shoplink {
@@ -122,7 +129,7 @@
 }
 
 .spinning-photos {
-  margin: 2rem 0;
+  margin: 1rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -149,7 +156,7 @@
 
 .iphone-container > header {
   margin-top: 2rem;
-  font-size: 4rem;
+  font-size: 3.4rem;
   font-weight: bold;
 }
 .iphone-container > .subheader {
@@ -178,7 +185,7 @@
 
 /* showcase */
 .showcase {
-  height: 180vh;
+  height: 200vh;
   margin-top: 0.8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -236,13 +243,57 @@
   background-color: #f5f5f7;
   background-image: url(/assets/images/watch.jpg);
 }
+.watch img {
+  height: 50px;
+  width: 130px;
+  padding: 0.7rem;
+}
+.watch p {
+  color: #cc2329;
+  font-size: 0.8rem;
+}
 .card {
   background-color: #fbfbfd;
   background-image: url(/assets/images/card.jpg);
 }
+.card img {
+  height: 37px;
+  width: 145px;
+  padding: 0.7rem;
+}
 .tvplus {
+  justify-items: center;
+  justify-content: space-between;
   background-size: cover;
   background-image: url(/assets/images/tv.jpg);
+}
+.tvlogo {
+  margin-top: 1rem;
+  height: 1.7rem;
+  width: 4.5rem;
+}
+.showcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.showcontainer a {
+  font-family: "SF Pro Text Regular";
+  font-weight: 200;
+  color: #fbfbfd;
+  text-decoration: none;
+}
+.showcontainer a > i {
+  color: #fbfbfd;
+}
+.showcontainer a:hover {
+  text-decoration: underline;
+}
+.showcontainer img {
+  margin-bottom: 1rem;
+  height: 120px;
+  width: 250px;
 }
 
 /* footer */
