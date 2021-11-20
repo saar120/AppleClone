@@ -42,7 +42,7 @@
 .navbar > ul > li > i {
   opacity: 0.8;
   color: #ffffff;
-  margin: 0 1rem;
+  margin: 0 1.2vw;
   transition: ease 0.4s;
 }
 .navbar > ul > li:hover,
