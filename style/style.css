@@ -139,6 +139,8 @@
 }
 .spinning-photos > img {
   margin: 1rem;
+  animation: spin 7s forwards linear;
+  animation-delay: 0.5s;
 }
 /* filled links */
 a.fill {
@@ -417,4 +419,14 @@ a.fill {
 }
 .final-div p {
   color: #6e6e73;
+}
+
+/* animations */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
 }
